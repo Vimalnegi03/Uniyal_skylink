@@ -6,11 +6,24 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://uniyalskylink.netlify.app/</loc>
   <lastmod>2024-09-05T02:23:46+00:00</lastmod>
 </url>
 
+<url>
+  <loc>https://uniyalskylink.netlify.app/contact</loc>
+  <lastmod>2024-09-05T02:23:46+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://uniyalskylink.netlify.app/connections</loc>
+  <lastmod>2024-09-05T02:23:46+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://uniyalskylink.netlify.app/members</loc>
+  <lastmod>2024-09-05T02:23:46+00:00</lastmod>
+</url>
 
 </urlset>
