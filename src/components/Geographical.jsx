@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-
+import { Helmet } from 'react-helmet';
 import markerIcon from '../assets/marker-icon.png';
 import markerShadow from '../assets/marker-shadow.png';
 
@@ -35,6 +35,19 @@ const locations = [
 const MapComponent = () => {
   return (
     <div className="min-h-screen flex flex-col items-center bg-gradient-to-r from-blue-500 to-purple-600 p-6">
+       <Helmet>
+        <title>Tehri Wi-Fi Connections</title>
+        <meta name="description" content="Explore Wi-Fi connection locations in Tehri Garhwal, including Bhagirathipuram, THDC IHET, Ghansali, and more." />
+        <meta name="keywords" content="Tehri Wi-Fi, Tehri Garhwal, Uttarakhand, Wi-Fi locations, internet services" />
+        <meta name="author" content="Vimal Negi" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+        <meta property="og:title" content="Tehri Wi-Fi Connections" />
+        <meta property="og:description" content="View and explore Wi-Fi connection points in Tehri Garhwal, Uttarakhand." />
+        <meta property="og:image" content="/bg2.jpg" />
+        <meta property="og:url" content="https://uniyalskylink.netlify.app/connections" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <h1 className="text-4xl font-bold text-white mb-6">Tehri Wi-Fi Connections</h1>
       <div className="w-full md:w-4/5 lg:w-3/4 xl:w-2/3">
         <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-6">

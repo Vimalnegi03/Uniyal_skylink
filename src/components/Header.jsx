@@ -1,11 +1,22 @@
 // Header.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Adjust if you're using a different routing library
-
+import { Helmet } from 'react-helmet';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+    <>
+    <Helmet>
+        <meta name="description" content="UniSkyLink - Providing reliable internet connections and service plans." />
+        <meta name="keywords" content="Wi-Fi plans, internet, UniSkyLink, connections, members" />
+        <meta name="author" content="Vimal Negi" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+        <meta property="og:title" content="UniSkyLink Internet Services" />
+        <meta property="og:description" content="Check out UniSkyLink's services, including connections, members, and contact details." />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
     <header className="bg-gray-900 text-white relative z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
@@ -52,6 +63,7 @@ const Header = () => {
         </nav>
       </div>
     </header>
+    </>
   );
 };
 

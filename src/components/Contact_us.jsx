@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import axios from 'axios';
 import { Toaster, toast } from 'react-hot-toast';
-
+ import { Helmet } from 'react-helmet';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -116,6 +116,19 @@ const ContactForm = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 p-6">
+       <Helmet>
+        {/* Meta Tags for SEO */}
+        <title>Contact Us - Uniyal Sky Link</title>
+        <meta name="description" content="Get in touch with us by filling out the contact form. We are here to help you with your queries." />
+        <meta name="keywords" content="Contact, Contact Us, Email, Aadhaar, Address, Phone, Form Submission" />
+        <meta name="author" content="Your Name or Company Name" />
+        <meta property="og:title" content="Contact Us - uniyal sky link" />
+        <meta property="og:description" content="Fill out our contact form to reach out. We are available for your queries and support." />
+        <meta property="og:image" content="/logo2.jpg" /> {/* Add your relevant image link */}
+        <meta property="og:url" content="https://uniyalskylink.netlify.app/contact" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="bg-white shadow-2xl rounded-lg p-8 w-full max-w-2xl">
         <h2 className="text-3xl font-extrabold mb-8 text-center text-gray-800">Contact Us</h2>
         <form onSubmit={handleSubmit}>

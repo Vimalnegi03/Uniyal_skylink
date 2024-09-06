@@ -1,12 +1,24 @@
 import React, { useState } from 'react';
 import Team from '../constants/member';
 import Member from '../components/Member.jsx';
-
+import { Helmet } from 'react-helmet';
 function Members() {
   const [team, setTeam] = useState(Team);
 
   return (
     <div className="bg-gray-100 py-12">
+      <Helmet>
+        <title>UniSkyLink - Team Members</title>
+        <meta name="description" content="Meet the UniSkyLink team, a group of dedicated professionals providing the best internet services. Contact us for any inquiries." />
+        <meta name="keywords" content="UniSkyLink, team, members, internet services, contact" />
+        <meta name="author" content="Vimal Negi" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+        <meta property="og:title" content="Meet the UniSkyLink Team" />
+        <meta property="og:description" content="Our team is here to provide excellent internet service and support." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
             HEAD
