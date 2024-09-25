@@ -1,8 +1,25 @@
-# React + Vite
+# BSNL Data Plans & Wi-Fi Connection Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **React** website providing users with detailed information about various BSNL data plans and Wi-Fi connection services. It offers an easy-to-navigate interface that helps users select the best plans according to their preferences.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Comprehensive Data Plans**: Displays a list of BSNL data plans, including pricing and data limits.
+- **Wi-Fi Plans**: Information about Wi-Fi connections, pricing, speed, and coverage.
+- **Responsive Design**: Mobile and tablet-friendly, ensuring a seamless experience across devices.
+- **Modern UI**: Styled with Tailwind CSS and Daisy UI for a clean and appealing design.
+- **Real-time Data Fetching**: Uses Axios to fetch real-time data about BSNL plans.
+
+## 🛠 Tech Stack
+
+- **Frontend**: React.js (Vite)
+- **Styling**: Tailwind CSS, Daisy UI
+- **Data Fetching**: Axios
+- **Routing**: React Router DOM
+
+## 📦 Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/bsnl-data-plans.git
